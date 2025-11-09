@@ -6,5 +6,23 @@
 
 .figures-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  li {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    padding: 25px 20px;
+    text-align: center;
+  }
+
+  p {
+    color: #7a6b8a;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
 }

@@ -1,6 +1,7 @@
+@charset "UTF-8";
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f7fa;
+  background: #fef7ff;
 }
 
 header {
@@ -21,6 +22,44 @@ h1 {
   margin: 0;
 }
 
+@keyframes pulse {
+  0% {
+    fill: #ffd166;
+    stroke: #cc9e2e;
+  }
+  50% {
+    fill: #ff9e44;
+    stroke: #e74c3c;
+  }
+  100% {
+    fill: #ffd166;
+    stroke: #cc9e2e;
+  }
+}
+@keyframes mini {
+  0% {
+    x: 10px;
+    y: 10px;
+    width: 200px;
+    height: 150px;
+    fill: #4ecdc4;
+    stroke: #2a827c;
+  }
+  50% {
+    x: 10px;
+    y: 10px;
+    width: 180px;
+    height: 130px;
+    fill: #2980b9;
+    stroke: #1b4f72;
+  }
+  100% {
+    width: 200px;
+    height: 150px;
+    fill: #4ecdc4;
+    stroke: #2a827c;
+  }
+}
 .container {
   margin: 0 auto;
   width: 1200px;
@@ -28,14 +67,16 @@ h1 {
 }
 
 .header {
-  background-color: rgba(151, 183, 242, 0.9);
-  padding: 50px 0;
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 30px 0;
   text-align: center;
 }
 .header-h1 {
-  color: #2c3e50;
-  font-size: 30px;
+  color: #8b7b9d; /* Ніжний фіолетово-сірий */
+  font-size: 40px;
   font-weight: 700;
+  letter-spacing: 1.5px;
 }
 
 .main .container {
@@ -44,29 +85,93 @@ h1 {
 
 .figures-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.figures-list li {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 25px 20px;
+  text-align: center;
+}
+.figures-list p {
+  color: #7a6b8a;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .square {
   fill: #ff6b6b;
   stroke: #c44d4d;
   stroke-width: 5px;
+  width: 170px;
+  height: 180px;
+  transition: fill 250ms ease-in-out, stroke 250ms ease-in-out;
+}
+.square-element {
+  x: 10px;
+  y: 10px;
+  width: 150px;
+  height: 150px;
+}
+.square:hover, .square:focus {
+  fill: #9b59b6;
+  stroke: #34495e;
 }
 
 .rectangle {
   fill: #4ecdc4;
   stroke: #2a827c;
   stroke-width: 10px;
+  width: 220px;
+  height: 180px;
+}
+.rectangle-element {
+  x: 10px;
+  y: 10px;
+  width: 200px;
+  height: 150px;
+  animation: mini 2s ease-in-out infinite alternate;
 }
 
 .circle {
   fill: #ffd166;
   stroke: #cc9e2e;
   stroke-width: 15px;
+  width: 180px;
+  height: 180px;
+  animation: pulse 2s ease-in-out infinite alternate;
+}
+.circle-element {
+  cx: 90px;
+  cy: 90px;
+  r: 75px;
 }
 
 .ellipse {
   fill: #cdb4db;
   stroke: #9b7cb6;
   stroke-width: 3px;
+  width: 250px;
+  height: 180px;
+}
+.ellipse-element {
+  cx: 103px;
+  cy: 53px;
+  rx: 100px;
+  ry: 50px;
+  transition: fill 250ms ease-in-out, stroke 250ms ease-in-out, cx 250ms ease-in-out, cy 250ms ease-in-out, rx 250ms ease-in-out, ry 250ms ease-in-out;
+}
+.ellipse:hover .ellipse-element, .ellipse:focus .ellipse-element {
+  cx: 123px;
+  cy: 63px;
+  rx: 120px;
+  ry: 60px;
+  fill: #9b59b6;
+  stroke: #34495e;
 }/*# sourceMappingURL=main.css.map */

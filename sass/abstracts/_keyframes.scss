@@ -1,0 +1,39 @@
+@keyframes pulse {
+  0% {
+    fill: #ffd166;
+    stroke: #cc9e2e;
+  }
+  50% {
+    fill: #ff9e44;
+    stroke: #e74c3c;
+  }
+  100% {
+    fill: #ffd166;
+    stroke: #cc9e2e;
+  }
+}
+
+@keyframes mini {
+  0% {
+    x: 10px;
+    y: 10px;
+    width: 200px;
+    height: 150px;
+    fill: #4ecdc4;
+    stroke: #2a827c;
+  }
+  50% {
+    x: 10px;
+    y: 10px;
+    width: 180px;
+    height: 130px;
+    fill: #2980b9;
+    stroke: #1b4f72;
+  }
+  100% {
+    width: 200px;
+    height: 150px;
+    fill: #4ecdc4;
+    stroke: #2a827c;
+  }
+}

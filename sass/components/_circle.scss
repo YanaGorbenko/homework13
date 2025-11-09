@@ -2,4 +2,13 @@
   fill: #ffd166;
   stroke: #cc9e2e;
   stroke-width: 15px;
+  width: 180px;
+  height: 180px;
+
+  &-element {
+    cx: 90px;
+    cy: 90px;
+    r: 75px;
+  }
+  animation: pulse 2s ease-in-out infinite alternate;
 }

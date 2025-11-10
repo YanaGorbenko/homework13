@@ -2,14 +2,6 @@
   fill: #ff6b6b;
   stroke: #c44d4d;
   stroke-width: 5px;
-  width: 170px;
-  height: 180px;
-  &-element {
-    x: 10px;
-    y: 10px;
-    width: 150px;
-    height: 150px;
-  }
   transition: fill 250ms ease-in-out, stroke 250ms ease-in-out;
   &:hover,
   &:focus {

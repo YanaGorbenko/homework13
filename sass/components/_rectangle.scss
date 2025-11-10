@@ -2,13 +2,7 @@
   fill: #4ecdc4;
   stroke: #2a827c;
   stroke-width: 10px;
-  width: 220px;
-  height: 180px;
   &-element {
-    x: 10px;
-    y: 10px;
-    width: 200px;
-    height: 150px;
     animation: mini 2s ease-in-out infinite alternate;
   }
 }

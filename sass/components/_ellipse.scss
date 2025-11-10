@@ -2,13 +2,7 @@
   fill: #cdb4db;
   stroke: #9b7cb6;
   stroke-width: 3px;
-  width: 250px;
-  height: 180px;
   &-element {
-    cx: 103px;
-    cy: 53px;
-    rx: 100px;
-    ry: 50px;
     transition: fill 250ms ease-in-out, stroke 250ms ease-in-out,
       cx 250ms ease-in-out, cy 250ms ease-in-out, rx 250ms ease-in-out,
       ry 250ms ease-in-out;
